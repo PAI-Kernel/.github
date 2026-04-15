@@ -45,8 +45,6 @@ This repository does NOT contain product code.
 
 All product-related development happens in dedicated repositories such as:
 - `pai-kernel`
-- `pai-console`
-- `ilifecreator`
 
 
 ## Notes
