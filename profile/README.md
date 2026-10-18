@@ -1,75 +1,45 @@
 # PAI-Kernel
 
-**Constitutional governance framework for AI systems operating on behalf of individual Authors.**
+PAI-CD (Personal Authorial Intelligence — Constitutional Document) is a
+normative governance framework for AI systems acting on behalf of an
+individual Author. PAI-Kernel hosts the framework documents, implementation
+work, and supporting research.
 
-Protecting authorial sovereignty at the deployment layer.
+The framework states requirements for authorial authority, delegation, consent,
+and audit. Implementation coverage and verification results are described in
+the [main project](https://github.com/PAI-Kernel/pai-kernel); a framework
+requirement is not, by itself, a demonstrated property of every deployment.
 
----
+## Public repositories
 
-## What is PAI-CD?
-
-PAI-CD (Personal Authorial Intelligence — Constitutional Document) is a normative governance framework that defines how AI systems must behave when operating on behalf of a specific human being.
-
-It answers three questions no existing framework addresses at the deployment layer:
-
-- **Who authorized this AI to act?** → Identity Layer + Delegation
-- **What is it allowed to do?** → Consent Architecture + Risk Tiers
-- **How do we verify it obeyed?** → Audit Layer + Witness Log
-
-## Why this matters
-
-Every AI system today operates under rules set by its provider, not its user. PAI-CD inverts this: the Author — the human the system serves — holds constitutional authority over their own AI instance.
-
-Six invariants that cannot be suspended under any condition:
-
-1. **Authorship Supremacy** — Author holds final authority
-2. **Cognitive Sovereignty** — no covert manipulation of Author's reasoning
-3. **Anti-Manipulation** — undeclared influence is a constitutional breach
-4. **Provider Independence** — governance works regardless of provider
-5. **Reversibility** — every action can be undone
-6. **Drift Immutability** — protections cannot weaken over time
-
-## What's in this organization
-
-| Repository | Contents | Status |
+| Repository | Role | Start here |
 |---|---|---|
-| [pai-kernel](https://github.com/PAI-Kernel/pai-kernel) | PAI-CD corpus, academic publication, compliance tools | Public |
+| [pai-kernel](https://github.com/PAI-Kernel/pai-kernel) | PAI-CD corpus, research material, SDK and tools | [Project README](https://github.com/PAI-Kernel/pai-kernel#readme) |
+| [homebrew-tap](https://github.com/PAI-Kernel/homebrew-tap) | Homebrew distribution configuration | [Current formula](https://github.com/PAI-Kernel/homebrew-tap/blob/main/Formula/pai-kernel.rb) |
+| [.github](https://github.com/PAI-Kernel/.github) | Organization profile and navigation | [Available resources](https://github.com/PAI-Kernel/.github#available-resources) |
 
-## Framework at a glance
+For a specific version, use the main project's
+[releases](https://github.com/PAI-Kernel/pai-kernel/releases) and installation
+documentation. The tap is a separate installation channel; the formula defines
+the version and build requirements it currently uses.
 
-    50 normative documents · 6 invariants · 8 principles · 7 Author rights
-    30 SDK crates · 286 tests · 0 unsafe code
-    Formal verification: TLA+ (7 invariants, 464K states)
-    Policy engine: OPA/Rego
-    Governance core: pure deterministic — no LLM in decision path
+## Research and citation
 
-## Publications
+- [PAI-CD: A Constitutional Framework for Authorial Sovereignty in Deployed AI Systems](https://doi.org/10.2139/ssrn.6512218)
+- [Versioned citation information](https://github.com/PAI-Kernel/pai-kernel/blob/main/CITATION.cff)
 
-- **SSRN:** "PAI-CD: A Constitutional Framework for Authorial Sovereignty in Deployed AI Systems" (Abstract ID 6512218)
-- **Website:** [paikernel.org](https://paikernel.org)
+For test counts, formal-model results, and implementation scope, follow the
+versioned evidence in `pai-kernel` rather than an independently maintained
+summary on this profile.
 
-## How to cite
+## Participation and licensing
 
-    @misc{SergeevMA2026paicd,
-      title     = {PAI-CD: A Constitutional Framework for Authorial Sovereignty
-                   in Deployed AI Systems},
-      author    = {Sergeev, Mikhail Anatolievich},
-      year      = {2026},
-      publisher = {SSRN},
-      doi       = {10.2139/ssrn.6512218}
-    }
+Start with the relevant repository's instructions. The main project provides
+[contribution guidelines](https://github.com/PAI-Kernel/pai-kernel/blob/main/CONTRIBUTING.md),
+a [security policy](https://github.com/PAI-Kernel/pai-kernel/blob/main/SECURITY.md),
+and [support information](https://github.com/PAI-Kernel/pai-kernel/blob/main/docs/SUPPORT.md).
 
-## License
-
-- **Framework (PAI-CD corpus):** CC BY 4.0
-- **SDK (PAI-Kernel):** MIT
-
-## Author
-
-**Mikhail Sergeev**
-Independent Researcher; PAI-Kernel Initiative
-ORCID: [0009-0001-6443-855X](https://orcid.org/0009-0001-6443-855X)
-
----
-
-*For the benefit of all living beings.*
+The main project's source code is available under MIT OR Apache-2.0, and its
+framework documentation under CC BY 4.0; consult its
+[license overview](https://github.com/PAI-Kernel/pai-kernel/blob/main/LICENSE-OVERVIEW.md)
+and the applicable file notices. Other repositories retain their own terms.
